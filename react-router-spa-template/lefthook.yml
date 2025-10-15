@@ -1,0 +1,6 @@
+# https://lefthook.dev/configuration/
+pre-commit:
+  commands:
+    check:
+      glob: "*.{js,ts,cjs,mjs,mts,cts,d.mts,jsx,tsx,json,jsonc}"
+      run: npx @biomejs/biome check --no-errors-on-unmatched --files-ignore-unknown=true --colors=off {all_files}
